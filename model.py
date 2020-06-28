@@ -10,7 +10,8 @@ classes = 80
 
 class BatchNormalization(tf.keras.layers.BatchNormalization):
     """
-    Make trainable=False freeze BN for real (the og version is sad)
+    Make trainable=False this is done to fix the issue in the orignal implementation. This was suggested in
+    https://github.com/broadinstitute/keras-resnet.
     """
 
     def call(self, x, training=False):
