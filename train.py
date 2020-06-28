@@ -9,17 +9,17 @@ import argparse
 def parse_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('--train_dataset', help='The path to training dataset.',
-                        default=f"/home/shahzaib/PycharmProjects/yolo/data/train_data.tfrecord")
+                        default=f"./data/train_data.tfrecord")
     parser.add_argument('--val_dataset', help='The path to validation dataset.',
-                        default=f"/home/shahzaib/PycharmProjects/yolo/data/test_data.tfrecord")
+                        default=f"./data/val_data.tfrecord")
     parser.add_argument('--weights', help='The path to weights checkpoint.',
-                        default=f"/home/shahzaib/PycharmProjects/yolo/checkpoints/yolov3_tiny.tf")
+                        default=f"./checkpoints/yolov3_tiny.tf")
     parser.add_argument('--classes', help='The path to classes file.',
-                        default=f"/home/shahzaib/PycharmProjects/yolo/data/coco.names")
+                        default=f"./data/coco.names")
     parser.add_argument('--size', help='The model input image size.',
                         default=416)
     parser.add_argument('--epochs', help='The number of epochs for training.',
-                        default=2)
+                        default=4)
     parser.add_argument('--batch_size', help='The batch size for training.',
                         default=8)
     parser.add_argument('--learning_rate', help='learning_rate.',
