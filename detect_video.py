@@ -14,7 +14,7 @@ def parse_arguments():
     parser.add_argument('--weights', help='The path to network weights.',
                         default=f"./checkpoints/yolov3_tiny.tf")
     parser.add_argument('--video', help='The path to video on which inference is to be called.',
-                        default=f"/home/shahzaib/Downloads/getting_started/downloaded_videos/cam0/2020_1_2_18_0 .avi")
+                        default=f"./data/video.avi")
     parser.add_argument('--model_input_size', help='The size of image that needs to be passed to model for inference.',
                         default=416)
     args = parser.parse_args()
